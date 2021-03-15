@@ -1,15 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        float start_balance = 100;
+        float startBalance = 100;
         float refill = 1500.15F;
         int bonus = 0;
-        float total_balance;
+        float totalBalance;
         if (refill >= 1_000) {
             bonus = (int) (refill / 100);
-            total_balance = refill + start_balance + bonus;
+            totalBalance = refill + startBalance + bonus;
             System.out.println(bonus);
-        } else total_balance = start_balance + refill;
-        System.out.print(total_balance);
+        } else totalBalance = startBalance + refill;
+        System.out.print(totalBalance);
     }
 
 }
